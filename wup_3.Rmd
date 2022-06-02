@@ -37,7 +37,7 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
-The median and first/third percentiles for the "back" seat box plot are significantly higher as compared to the "front" and "middle" seats, including the max. The "front" seat data seemed to have the lowest median and maximum, while the "middle" data had the most outliers. The people in the "back" seats seemed to consume more alcohol compared to the pople in the "front" and "middle".
+The median and first/third percentiles for the "back" seat box plot are significantly higher as compared to the "front" and "middle" seats, including the max. The "front" seat data seemed to have the lowest median and maximum, while the "middle" data had the most outliers. The people in the "back" seats seemed to consume more alcohol compared to the people in the "front" and "middle".
 
 
 ## Numerical Summarys 
