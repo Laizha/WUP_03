@@ -50,6 +50,19 @@ Though the middle row had the most people (n=83), the "back" row had the highest
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+Low p-level indicates issue in data, and warrants further statistical testing through a TurkeyHSD test. 
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+The front-back difference consistently yields a negative number, indicating that there is an actual difference between the alcohol consumption of the front rows and that of the middle rows; this observation also persists for the middle-back data. The differences between the middle and the front rows aren't as large compared to the other two categories, even passing zero at an instance, showing that the middle and the front rows are not that differnt from one another. 
+
 ## Conclusions
 
 
